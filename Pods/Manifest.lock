@@ -1,0 +1,20 @@
+PODS:
+  - BSImagePicker (3.1.1)
+  - SwiftyVK (3.4.1)
+
+DEPENDENCIES:
+  - BSImagePicker (~> 3.1)
+  - SwiftyVK
+
+SPEC REPOS:
+  trunk:
+    - BSImagePicker
+    - SwiftyVK
+
+SPEC CHECKSUMS:
+  BSImagePicker: 86f28e0f63b78d35fec7c6f0174b7af9e6f1431e
+  SwiftyVK: feb6f61d5d0f880b02035d729e12dd613e2f57c7
+
+PODFILE CHECKSUM: b2fcd762a7814ffbea0ab598934f37ef8e04851f
+
+COCOAPODS: 1.9.0
