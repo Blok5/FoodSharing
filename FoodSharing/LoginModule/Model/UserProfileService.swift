@@ -1,6 +1,7 @@
 import Foundation
+import SwiftyVK
 
-struct GetUserAPI: Codable {
+struct UserProfileService: Codable {
     var name: String
     var surname: String
     var iconUrl: String
@@ -31,9 +32,11 @@ struct GetUserAPI: Codable {
         self.id = try! container.decode(Int.self, forKey: .id)
         self.city = try! container.decode(City.self, forKey: .city)
     }
+
 }
 
 struct City: Codable {
     let id: Int
     let title: String
 }
+

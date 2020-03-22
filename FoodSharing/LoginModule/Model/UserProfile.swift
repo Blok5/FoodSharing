@@ -1,12 +1,12 @@
 import Foundation
 import UIKit
 import ResourceNetworking
+import SwiftyVK
 
 protocol UserProfileDelegate: AnyObject {
     func iconDidLoaded(userProfile: UserProfile)
 }
 
-//Class describe the user profile of application
 class UserProfile {
     let uuid = UUID().uuidString
     var vkid: Int?
@@ -16,7 +16,7 @@ class UserProfile {
     var userEmail: String?
     
     var activeFoodLotArray: FoodLot?
-    //var deactiveFoodLotArray: FoodLot?
+
     var givenFoodArray: FoodLot?
     
     private var cancel: Cancellation?
@@ -30,13 +30,14 @@ class UserProfile {
         }
     }
     
-    init(userService: GetUserAPI) {
+    init(userService: UserProfileService) {
         self.name = userService.name
         self.surname = userService.surname
         self.vkid = userService.id
         self.city = userService.city.title
         self.iconUrl = userService.iconUrl
     }
+    
 }
 
 extension UserProfile {

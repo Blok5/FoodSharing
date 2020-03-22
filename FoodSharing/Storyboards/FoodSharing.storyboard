@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IPT-9g-Uef">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6Qe-jQ-4yB">
+            <objects>
+                <navigationController id="IPT-9g-Uef" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aLe-NB-hrA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xwr-c3-W9s" kind="relationship" relationship="rootViewController" id="C6H-0w-AnN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNK-Ec-VSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-988" y="49"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="iOu-JV-YCe">
+            <objects>
+                <viewController id="xwr-c3-W9s" customClass="LoginViewController" customModule="FoodSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7uG-vu-gzF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9U-Ag-DfO">
+                                <rect key="frame" x="102" y="274" width="210" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fbi-Ia-UHq"/>
+                                    <constraint firstAttribute="width" constant="210" id="ZmX-Od-8SP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="xwr-c3-W9s" eventType="touchUpInside" id="JmF-lM-T6a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c9U-Ag-DfO" firstAttribute="leading" secondItem="Qxc-re-vTh" secondAttribute="leading" constant="102" id="TU9-fw-K1X"/>
+                            <constraint firstItem="c9U-Ag-DfO" firstAttribute="top" secondItem="Qxc-re-vTh" secondAttribute="top" constant="186" id="eDq-Wx-IgZ"/>
+                            <constraint firstItem="Qxc-re-vTh" firstAttribute="bottom" secondItem="c9U-Ag-DfO" secondAttribute="bottom" constant="592" id="jfD-zw-TeU"/>
+                            <constraint firstItem="Qxc-re-vTh" firstAttribute="trailing" secondItem="c9U-Ag-DfO" secondAttribute="trailing" constant="102" id="zy0-Ic-6zh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qxc-re-vTh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jzO-aV-832"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nof-47-DWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="48.883928571428569"/>
+        </scene>
+    </scenes>
+</document>

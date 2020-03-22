@@ -1,6 +1,7 @@
 import Foundation
+import SwiftyVK
 
-struct SessionInfoAPI: Codable {
+struct SessionInfoService: Codable {
     var expiresIn: String
     var accessToken: String
     var email: String
@@ -20,4 +21,6 @@ struct SessionInfoAPI: Codable {
         self.email = try! container.decode(String.self, forKey: .email)
         self.userId = try! container.decode(String.self, forKey: .userId)
     }
+    
+
 }

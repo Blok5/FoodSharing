@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDBB6A60BA45340172A05A65 /* Pods_FoodSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638170BC59B3B170AB6A995A /* Pods_FoodSharing.framework */; };
+		3726B7819C0EC79BEB2FC3E7 /* Pods_FoodSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5096C57B5F49B39A319DBF /* Pods_FoodSharing.framework */; };
 		D510406A23844B00001D5E97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D510406923844B00001D5E97 /* AppDelegate.swift */; };
 		D510406C23844B00001D5E97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D510406B23844B00001D5E97 /* SceneDelegate.swift */; };
 		D510407123844B00001D5E97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D510406F23844B00001D5E97 /* Main.storyboard */; };
@@ -16,18 +16,18 @@
 		D51680E9240C2D3E007E4781 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51680E8240C2D3E007E4781 /* UserProfile.swift */; };
 		D53BD5DD24007601006AD6FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BD5DC24007601006AD6FB /* LoginViewController.swift */; };
 		D54637AC241E6A7600AE5DCE /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54637AB241E6A7600AE5DCE /* LoginPresenter.swift */; };
-		D54637B1241E71D100AE5DCE /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54637B0241E71D100AE5DCE /* ModuleBuilder.swift */; };
 		D5475F12240D8A1C000A8A93 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5475F11240D8A1C000A8A93 /* Reachability.swift */; };
 		D5475F14240EC79E000A8A93 /* FoodLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5475F13240EC79E000A8A93 /* FoodLot.swift */; };
 		D57A89F524094D0F00A947EC /* VKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A89F424094D0F00A947EC /* VKDelegate.swift */; };
 		D57A89FF2409A20100A947EC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A89FE2409A20100A947EC /* SettingsViewController.swift */; };
 		D57A8A012409A4B500A947EC /* FoodFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A8A002409A4B500A947EC /* FoodFeedViewController.swift */; };
-		D5952281240A41EE00EFE985 /* GetUserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5952280240A41EE00EFE985 /* GetUserAPI.swift */; };
+		D5952281240A41EE00EFE985 /* UserProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5952280240A41EE00EFE985 /* UserProfileService.swift */; };
 		D5952283240BB7EB00EFE985 /* AddFoodLotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5952282240BB7EB00EFE985 /* AddFoodLotViewController.swift */; };
 		D5952285240BB9A800EFE985 /* FoodUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5952284240BB9A800EFE985 /* FoodUITabBarController.swift */; };
-		D5952287240BD0BC00EFE985 /* SessionInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5952286240BD0BC00EFE985 /* SessionInfoAPI.swift */; };
+		D5952287240BD0BC00EFE985 /* SessionInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5952286240BD0BC00EFE985 /* SessionInfoService.swift */; };
 		D5B7F668241E2AEC00838616 /* ResourceNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B7F662241E288D00838616 /* ResourceNetworking.framework */; };
 		D5B7F669241E2AEC00838616 /* ResourceNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5B7F662241E288D00838616 /* ResourceNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5C5C58324275F7800690CF9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C5C58224275F7800690CF9 /* Result.swift */; };
 		D5F5228A24161BC800AEE2E4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F5228924161BC800AEE2E4 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 
 /* Begin PBXFileReference section */
 		3E99BB3EE118FB3570DBB54C /* Pods-FoodSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSharing.debug.xcconfig"; path = "Target Support Files/Pods-FoodSharing/Pods-FoodSharing.debug.xcconfig"; sourceTree = "<group>"; };
-		638170BC59B3B170AB6A995A /* Pods_FoodSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5096C57B5F49B39A319DBF /* Pods_FoodSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D510406623844B00001D5E97 /* FoodSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D510406923844B00001D5E97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D510406B23844B00001D5E97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,17 +75,17 @@
 		D51680E8240C2D3E007E4781 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		D53BD5DC24007601006AD6FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D54637AB241E6A7600AE5DCE /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		D54637B0241E71D100AE5DCE /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		D5475F11240D8A1C000A8A93 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		D5475F13240EC79E000A8A93 /* FoodLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLot.swift; sourceTree = "<group>"; };
 		D57A89F424094D0F00A947EC /* VKDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKDelegate.swift; sourceTree = "<group>"; };
 		D57A89FE2409A20100A947EC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D57A8A002409A4B500A947EC /* FoodFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFeedViewController.swift; sourceTree = "<group>"; };
-		D5952280240A41EE00EFE985 /* GetUserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserAPI.swift; sourceTree = "<group>"; };
+		D5952280240A41EE00EFE985 /* UserProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileService.swift; sourceTree = "<group>"; };
 		D5952282240BB7EB00EFE985 /* AddFoodLotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodLotViewController.swift; sourceTree = "<group>"; };
 		D5952284240BB9A800EFE985 /* FoodUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodUITabBarController.swift; sourceTree = "<group>"; };
-		D5952286240BD0BC00EFE985 /* SessionInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfoAPI.swift; sourceTree = "<group>"; };
+		D5952286240BD0BC00EFE985 /* SessionInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfoService.swift; sourceTree = "<group>"; };
 		D5B7F65C241E288D00838616 /* ResourceNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResourceNetworking.xcodeproj; path = "../ResourceNetworking-master/ResourceNetworking.xcodeproj"; sourceTree = "<group>"; };
+		D5C5C58224275F7800690CF9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D5F5228924161BC800AEE2E4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		D963343D9B5B9ED0530C6E7B /* Pods-FoodSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSharing.release.xcconfig"; path = "Target Support Files/Pods-FoodSharing/Pods-FoodSharing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,7 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5B7F668241E2AEC00838616 /* ResourceNetworking.framework in Frameworks */,
-				CDBB6A60BA45340172A05A65 /* Pods_FoodSharing.framework in Frameworks */,
+				3726B7819C0EC79BEB2FC3E7 /* Pods_FoodSharing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D5B7F65C241E288D00838616 /* ResourceNetworking.xcodeproj */,
-				638170BC59B3B170AB6A995A /* Pods_FoodSharing.framework */,
+				7F5096C57B5F49B39A319DBF /* Pods_FoodSharing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,7 +142,6 @@
 				D510406B23844B00001D5E97 /* SceneDelegate.swift */,
 				D510407223844B04001D5E97 /* Assets.xcassets */,
 				D510407723844B04001D5E97 /* Info.plist */,
-				D54637B0241E71D100AE5DCE /* ModuleBuilder.swift */,
 			);
 			path = FoodSharing;
 			sourceTree = "<group>";
@@ -179,8 +178,10 @@
 		D54637AD241E6AE000AE5DCE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D5952286240BD0BC00EFE985 /* SessionInfoAPI.swift */,
-				D5952280240A41EE00EFE985 /* GetUserAPI.swift */,
+				D51680E8240C2D3E007E4781 /* UserProfile.swift */,
+				D5952286240BD0BC00EFE985 /* SessionInfoService.swift */,
+				D5952280240A41EE00EFE985 /* UserProfileService.swift */,
+				D5C5C58224275F7800690CF9 /* Result.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,25 +213,16 @@
 		D598F9DB2416270D00AE1DC8 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				D598F9DC241AC1CC00AE1DC8 /* Loging Module */,
 				D510406F23844B00001D5E97 /* Main.storyboard */,
 				D510407423844B04001D5E97 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		D598F9DC241AC1CC00AE1DC8 /* Loging Module */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Loging Module";
-			sourceTree = "<group>";
-		};
 		D59903FC24094A1200B05BAC /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				D51680EA240C324E007E4781 /* VKWorker */,
-				D51680E8240C2D3E007E4781 /* UserProfile.swift */,
 				D5475F11240D8A1C000A8A93 /* Reachability.swift */,
 				D5475F13240EC79E000A8A93 /* FoodLot.swift */,
 			);
@@ -400,16 +392,16 @@
 				D53BD5DD24007601006AD6FB /* LoginViewController.swift in Sources */,
 				D510406A23844B00001D5E97 /* AppDelegate.swift in Sources */,
 				D510406C23844B00001D5E97 /* SceneDelegate.swift in Sources */,
+				D5C5C58324275F7800690CF9 /* Result.swift in Sources */,
 				D5475F14240EC79E000A8A93 /* FoodLot.swift in Sources */,
 				D57A8A012409A4B500A947EC /* FoodFeedViewController.swift in Sources */,
 				D57A89F524094D0F00A947EC /* VKDelegate.swift in Sources */,
 				D54637AC241E6A7600AE5DCE /* LoginPresenter.swift in Sources */,
 				D57A89FF2409A20100A947EC /* SettingsViewController.swift in Sources */,
-				D54637B1241E71D100AE5DCE /* ModuleBuilder.swift in Sources */,
 				D5F5228A24161BC800AEE2E4 /* CollectionViewCell.swift in Sources */,
 				D5952283240BB7EB00EFE985 /* AddFoodLotViewController.swift in Sources */,
-				D5952281240A41EE00EFE985 /* GetUserAPI.swift in Sources */,
-				D5952287240BD0BC00EFE985 /* SessionInfoAPI.swift in Sources */,
+				D5952281240A41EE00EFE985 /* UserProfileService.swift in Sources */,
+				D5952287240BD0BC00EFE985 /* SessionInfoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

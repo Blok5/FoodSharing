@@ -4,7 +4,7 @@ import UIKit
 final class VKDelegateExample: SwiftyVKDelegate {
     
     let appId = "7338418"
-    let scopes: Scopes = [.email,.friends,.offline,.friends,.photos]
+    let scopes: Scopes = [.email,.photos]
 //    ;[.messages,.offline,.friends,.wall,.photos,.audio,.video,.docs,.market,.email]
     
     init() {
@@ -16,7 +16,8 @@ final class VKDelegateExample: SwiftyVKDelegate {
     }
 
     func vkNeedToPresent(viewController: VKViewController) {
-        if let rootController = UIApplication.shared.keyWindow?.rootViewController {
+        let keyWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        if let rootController = keyWindow!.rootViewController {
             rootController.present(viewController, animated: true)
         }
      

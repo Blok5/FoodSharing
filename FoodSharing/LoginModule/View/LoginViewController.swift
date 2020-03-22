@@ -1,37 +1,44 @@
 import UIKit
 
-class LoginViewController: UIViewController, LoginViewProtocol {
-    var presenter: LoginPresenter!
-
+class LoginViewController: UIViewController, LoginViewDelegate {
+    var presenter: LoginViewPresenterProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Hide back button (when come back from log out)
-        self.navigationItem.setHidesBackButton(true, animated: false)
+        initializeDependencies()
+        presenter.performSegueIfUserLoggedIn()
+        navigationItem.setHidesBackButton(true, animated: false)
     }
     
-    func performSegue(userProfile: UserProfile) {
-        DispatchQueue.main.async {
-            self.performSegue(withIdentifier: "showTabBarController", sender: nil)
+    private func initializeDependencies() {
+        presenter = LoginPresenter(view: self)
+    }
+    
+    //MARK:  LoginView
+    @IBAction func didTapLoginButton(_ sender: UIButton) {
+        self.presenter.login()
+    }
+    
+    func showError(with message: String) {
+        let alert = UIAlertController(title: "Ошибка", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ок", style: .default, handler: { [unowned self] action in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.present(alert, animated: true, completion: nil)
         }
     }
     
-    func showAlert() {
-        let alert = UIAlertController(title: "Login", message: "Ошибка при попытке входа, попробуйте еще раз!", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-
+    //MARK: Segue
+    public func showTabBarController() {
+        DispatchQueue.main.async { [weak self] in
+            self?.performSegue(withIdentifier: "showTabBar", sender: nil)
+        }
     }
     
-    @IBAction func didTapLoginButton(_ sender: UIButton) {
-        self.presenter.login()
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.presenter.willPerformSegue(for: segue)
     }
     
-    
-    //pass data into tab bar controller (How to pass data now with MVP?)
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let vc = segue.destination as! FoodUITabBarController
-//        vc.user = self.newUser!
-//    }
-
 }

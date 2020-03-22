@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LQi-ZP-nGn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sk2-zo-NtL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -8,27 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="9Z3-dj-Cuh">
-            <objects>
-                <navigationController id="LQi-ZP-nGn" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="anG-2U-Shf"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vFc-CQ-QTd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="uqz-s0-9u8" kind="relationship" relationship="rootViewController" id="Wxd-My-gge"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KgO-iH-nby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-725" y="106"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="2rk-cL-eCj">
             <objects>
-                <viewController id="bWo-ol-Wvv" customClass="SettingsViewController" customModule="Lesson3_class" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bWo-ol-Wvv" customClass="SettingsViewController" customModule="FoodSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FCI-z7-CqP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +32,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="LogOutButtonOnClick:" destination="bWo-ol-Wvv" eventType="touchUpInside" id="ANo-aW-WlA"/>
-                                    <segue destination="uqz-s0-9u8" kind="show" id="Gid-zo-jSc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserNameUserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhr-aT-DRq">
@@ -104,7 +86,7 @@
         <!--Food Feed-->
         <scene sceneID="HUE-qT-ltI">
             <objects>
-                <viewController id="Bur-kg-WLH" customClass="FoodFeedViewController" customModule="Lesson3_class" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bur-kg-WLH" customClass="FoodFeedViewController" customModule="FoodSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j75-3g-Bwp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,10 +99,69 @@
             </objects>
             <point key="canvasLocation" x="-610" y="1517"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WCs-0w-zrb">
+            <objects>
+                <navigationController id="sk2-zo-NtL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="863-w7-ffB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="f4z-15-nxa" kind="relationship" relationship="rootViewController" id="S9a-jJ-Kr5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pON-7l-Znr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1593" y="800"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="gCY-XE-WWK">
+            <objects>
+                <viewController id="f4z-15-nxa" customClass="LoginViewController" customModule="FoodSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBt-CC-mt5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfC-tk-cvF">
+                                <rect key="frame" x="10" y="138" width="394" height="50"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rEg-Tn-PM7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Войти через VK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="8"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="f4z-15-nxa" eventType="touchUpInside" id="Vyz-66-OjY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Y7q-aV-43y" firstAttribute="trailing" secondItem="yfC-tk-cvF" secondAttribute="trailing" constant="10" id="JS0-f8-wSF"/>
+                            <constraint firstItem="yfC-tk-cvF" firstAttribute="top" secondItem="Y7q-aV-43y" secondAttribute="top" constant="50" id="N6h-bH-SS4"/>
+                            <constraint firstItem="yfC-tk-cvF" firstAttribute="leading" secondItem="Y7q-aV-43y" secondAttribute="leading" constant="10" id="VEL-fd-iPI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y7q-aV-43y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UPi-pR-52A"/>
+                    <connections>
+                        <segue destination="LSu-QK-L7X" kind="show" identifier="showTabBar" id="D6f-pH-gr2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AWi-7O-R8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="800"/>
+        </scene>
         <!--FoodUI Tab Bar Controller-->
         <scene sceneID="6HE-F4-vMn">
             <objects>
-                <tabBarController id="LSu-QK-L7X" customClass="FoodUITabBarController" customModule="Lesson3_class" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="LSu-QK-L7X" customClass="FoodUITabBarController" customModule="FoodSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="y71-be-0gW"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NaV-gi-pJW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -137,56 +178,10 @@
             </objects>
             <point key="canvasLocation" x="125" y="800"/>
         </scene>
-        <!--Login View Controller-->
-        <scene sceneID="K39-mW-h4h">
-            <objects>
-                <viewController id="uqz-s0-9u8" customClass="LoginViewController" customModule="Lesson3_class" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cgi-GD-EP0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjG-CZ-DrU">
-                                <rect key="frame" x="7" y="128" width="400" height="50"/>
-                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="AvC-NX-uES"/>
-                                    <constraint firstAttribute="height" constant="50" id="o8Z-dB-Ymh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Login throught VK">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="8"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="LoginOnClick:" destination="uqz-s0-9u8" eventType="touchUpInside" id="K7A-6w-jnk"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="XjG-CZ-DrU" firstAttribute="top" secondItem="E2t-KH-MmB" secondAttribute="top" constant="40" id="2Af-B9-0zj"/>
-                            <constraint firstItem="XjG-CZ-DrU" firstAttribute="centerX" secondItem="cgi-GD-EP0" secondAttribute="centerX" id="Op0-aJ-KEY"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="E2t-KH-MmB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gU7-Zh-zzb"/>
-                    <connections>
-                        <outlet property="VKLoginButton" destination="XjG-CZ-DrU" id="SjE-YI-G76"/>
-                        <segue destination="LSu-QK-L7X" kind="show" identifier="showTabBarController" id="FHV-TN-wRr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufe-tJ-Fsg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="126" y="106"/>
-        </scene>
         <!--Add food-->
         <scene sceneID="vlO-AS-i72">
             <objects>
-                <viewController id="QMW-5t-Pl8" customClass="AddFoodLotViewController" customModule="Lesson3_class" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QMW-5t-Pl8" customClass="AddFoodLotViewController" customModule="FoodSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ciA-Ri-nfr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +200,7 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCell" id="w6S-UJ-Dn9" customClass="CollectionViewCell" customModule="Lesson3_class" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCell" id="w6S-UJ-Dn9" customClass="CollectionViewCell" customModule="FoodSharing" customModuleProvider="target">
                                         <rect key="frame" x="10" y="10" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XiO-fP-rNe">
@@ -353,7 +348,4 @@
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Wxd-My-gge"/>
-    </inferredMetricsTieBreakers>
 </document>
