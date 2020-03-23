@@ -1,13 +1,5 @@
-//
-//  SettingsPresentor.swift
-//  FoodSharing
-//
-//  Created by Игорь Симаков on 23.03.2020.
-//  Copyright © 2020 Игорь Симаков. All rights reserved.
-//
 import SwiftyVK
 import ResourceNetworking
-import Foundation
 
 protocol SettingsViewDelegate: class {
     func showIcon(icon: UIImage)

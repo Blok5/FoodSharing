@@ -1,6 +1,4 @@
 import UIKit
-import SwiftyVK
-import ResourceNetworking
 
 class SettingsViewController: UIViewController {
     @IBOutlet weak var LogOutButton: UIButton!
