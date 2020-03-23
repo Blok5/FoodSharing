@@ -8,23 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
+        <!--Settings View Controller-->
         <scene sceneID="2rk-cL-eCj">
             <objects>
                 <viewController id="bWo-ol-Wvv" customClass="SettingsViewController" customModule="FoodSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FCI-z7-CqP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNs-qt-Ojz">
-                                <rect key="frame" x="7" y="375" width="400" height="50"/>
+                                <rect key="frame" x="7" y="286" width="400" height="50"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FkT-Zz-Ozn"/>
                                     <constraint firstAttribute="width" constant="400" id="cNV-R5-D6M"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Log out">
+                                <state key="normal" title="Выйти">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -35,13 +35,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserNameUserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhr-aT-DRq">
-                                <rect key="frame" x="121" y="273" width="172.5" height="21"/>
+                                <rect key="frame" x="121" y="185" width="172.5" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OSI-Bl-kpP">
-                                <rect key="frame" x="147" y="138" width="120" height="120"/>
+                                <rect key="frame" x="147" y="50" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Brp-QT-lg6"/>
                                     <constraint firstAttribute="width" constant="120" id="KrR-CZ-jsR"/>
@@ -51,49 +51,41 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmailEmailEmailEmailEmail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIp-kG-7QC">
-                                <rect key="frame" x="104.5" y="304" width="205" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="nhr-aT-DRq" firstAttribute="centerX" secondItem="FCI-z7-CqP" secondAttribute="centerX" id="3Qo-N1-kTA"/>
-                            <constraint firstItem="sNs-qt-Ojz" firstAttribute="top" secondItem="HIp-kG-7QC" secondAttribute="bottom" constant="50" id="7vm-yz-wPK"/>
-                            <constraint firstItem="HIp-kG-7QC" firstAttribute="top" secondItem="nhr-aT-DRq" secondAttribute="bottom" constant="10" id="NIe-tN-lUS"/>
+                            <constraint firstItem="sNs-qt-Ojz" firstAttribute="top" secondItem="nhr-aT-DRq" secondAttribute="bottom" constant="80" id="PIx-NZ-m62"/>
                             <constraint firstItem="OSI-Bl-kpP" firstAttribute="centerX" secondItem="FCI-z7-CqP" secondAttribute="centerX" id="X0R-L7-CTg"/>
-                            <constraint firstItem="HIp-kG-7QC" firstAttribute="centerX" secondItem="FCI-z7-CqP" secondAttribute="centerX" id="rdk-ao-D1X"/>
                             <constraint firstItem="nhr-aT-DRq" firstAttribute="top" secondItem="OSI-Bl-kpP" secondAttribute="bottom" constant="15" id="rsR-il-R4T"/>
                             <constraint firstItem="sNs-qt-Ojz" firstAttribute="centerX" secondItem="FCI-z7-CqP" secondAttribute="centerX" id="ueX-11-6dg"/>
                             <constraint firstItem="OSI-Bl-kpP" firstAttribute="top" secondItem="mJN-Jh-SUR" secondAttribute="top" constant="50" id="yaO-Gm-ThH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mJN-Jh-SUR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="9K0-dc-Ppa"/>
+                    <tabBarItem key="tabBarItem" title="" image="gear" catalog="system" id="9K0-dc-Ppa"/>
                     <connections>
-                        <outlet property="EmailLabel" destination="HIp-kG-7QC" id="q2M-ay-tFB"/>
                         <outlet property="LogOutButton" destination="sNs-qt-Ojz" id="ntb-Dt-CPs"/>
                         <outlet property="UserNameLabel" destination="nhr-aT-DRq" id="jDa-w7-7ET"/>
                         <outlet property="profilePhoto" destination="OSI-Bl-kpP" id="6d1-oM-NQC"/>
+                        <segue destination="f4z-15-nxa" kind="show" identifier="showLoginModule" id="VUa-yV-Loi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSm-e3-lHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="811.59420289855075" y="1516.7410714285713"/>
         </scene>
-        <!--Food Feed-->
+        <!--Food Feed View Controller-->
         <scene sceneID="HUE-qT-ltI">
             <objects>
                 <viewController id="Bur-kg-WLH" customClass="FoodFeedViewController" customModule="FoodSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j75-3g-Bwp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="CJJ-ZC-s1i"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Food Feed" image="house.fill" catalog="system" id="eUe-yU-n1q"/>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="eUe-yU-n1q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUH-ru-uAm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,18 +105,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pON-7l-Znr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1593" y="800"/>
+            <point key="canvasLocation" x="1816" y="800"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="gCY-XE-WWK">
             <objects>
                 <viewController id="f4z-15-nxa" customClass="LoginViewController" customModule="FoodSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aBt-CC-mt5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfC-tk-cvF">
-                                <rect key="frame" x="10" y="138" width="394" height="50"/>
+                                <rect key="frame" x="10" y="50" width="394" height="50"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rEg-Tn-PM7"/>
@@ -156,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWi-7O-R8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-690" y="800"/>
+            <point key="canvasLocation" x="1817" y="1517"/>
         </scene>
         <!--FoodUI Tab Bar Controller-->
         <scene sceneID="6HE-F4-vMn">
@@ -178,16 +170,16 @@
             </objects>
             <point key="canvasLocation" x="125" y="800"/>
         </scene>
-        <!--Add food-->
+        <!--Add Food Lot View Controller-->
         <scene sceneID="vlO-AS-i72">
             <objects>
                 <viewController id="QMW-5t-Pl8" customClass="AddFoodLotViewController" customModule="FoodSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ciA-Ri-nfr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vpy-AH-beu">
-                                <rect key="frame" x="7" y="98" width="400" height="270"/>
+                                <rect key="frame" x="7" y="10" width="400" height="270"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="270" id="UPd-1D-9wI"/>
@@ -243,7 +235,7 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWz-iy-Xhw">
-                                <rect key="frame" x="7" y="378" width="400" height="330"/>
+                                <rect key="frame" x="7" y="290" width="400" height="330"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PfC-M7-dlX">
                                         <rect key="frame" x="10" y="10" width="380" height="50"/>
@@ -332,7 +324,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aR9-2C-hvt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add food" image="plus" catalog="system" id="lCg-ho-6RJ"/>
+                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="lCg-ho-6RJ"/>
                     <connections>
                         <outlet property="collectionView" destination="vpy-AH-beu" id="pwd-1I-2IQ"/>
                     </connections>
@@ -348,4 +340,7 @@
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VUa-yV-Loi"/>
+    </inferredMetricsTieBreakers>
 </document>

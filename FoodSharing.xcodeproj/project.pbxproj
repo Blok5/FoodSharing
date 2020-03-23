@@ -18,6 +18,7 @@
 		D54637AC241E6A7600AE5DCE /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54637AB241E6A7600AE5DCE /* LoginPresenter.swift */; };
 		D5475F12240D8A1C000A8A93 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5475F11240D8A1C000A8A93 /* Reachability.swift */; };
 		D5475F14240EC79E000A8A93 /* FoodLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5475F13240EC79E000A8A93 /* FoodLot.swift */; };
+		D557C03A2429069D00768AF6 /* SettingsPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557C0392429069D00768AF6 /* SettingsPresentor.swift */; };
 		D57A89F524094D0F00A947EC /* VKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A89F424094D0F00A947EC /* VKDelegate.swift */; };
 		D57A89FF2409A20100A947EC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A89FE2409A20100A947EC /* SettingsViewController.swift */; };
 		D57A8A012409A4B500A947EC /* FoodFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A8A002409A4B500A947EC /* FoodFeedViewController.swift */; };
@@ -77,6 +78,7 @@
 		D54637AB241E6A7600AE5DCE /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		D5475F11240D8A1C000A8A93 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		D5475F13240EC79E000A8A93 /* FoodLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLot.swift; sourceTree = "<group>"; };
+		D557C0392429069D00768AF6 /* SettingsPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresentor.swift; sourceTree = "<group>"; };
 		D57A89F424094D0F00A947EC /* VKDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKDelegate.swift; sourceTree = "<group>"; };
 		D57A89FE2409A20100A947EC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D57A8A002409A4B500A947EC /* FoodFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFeedViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				D54637A8241E6A4A00AE5DCE /* LoginModule */,
+				D557C0362429066100768AF6 /* SettingModule */,
 				D598F9DB2416270D00AE1DC8 /* Storyboards */,
 				D598F9DA241626DE00AE1DC8 /* View */,
 				D59903FC24094A1200B05BAC /* Model */,
@@ -157,7 +160,6 @@
 		D53BD5DB240075CB006AD6FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D57A89FE2409A20100A947EC /* SettingsViewController.swift */,
 				D57A8A002409A4B500A947EC /* FoodFeedViewController.swift */,
 				D5952282240BB7EB00EFE985 /* AddFoodLotViewController.swift */,
 				D5952284240BB9A800EFE985 /* FoodUITabBarController.swift */,
@@ -198,6 +200,31 @@
 			isa = PBXGroup;
 			children = (
 				D53BD5DC24007601006AD6FB /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D557C0362429066100768AF6 /* SettingModule */ = {
+			isa = PBXGroup;
+			children = (
+				D557C03D242906B300768AF6 /* View */,
+				D557C03C242906AC00768AF6 /* Presentor */,
+			);
+			path = SettingModule;
+			sourceTree = "<group>";
+		};
+		D557C03C242906AC00768AF6 /* Presentor */ = {
+			isa = PBXGroup;
+			children = (
+				D557C0392429069D00768AF6 /* SettingsPresentor.swift */,
+			);
+			path = Presentor;
+			sourceTree = "<group>";
+		};
+		D557C03D242906B300768AF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D57A89FE2409A20100A947EC /* SettingsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -395,6 +422,7 @@
 				D5C5C58324275F7800690CF9 /* Result.swift in Sources */,
 				D5475F14240EC79E000A8A93 /* FoodLot.swift in Sources */,
 				D57A8A012409A4B500A947EC /* FoodFeedViewController.swift in Sources */,
+				D557C03A2429069D00768AF6 /* SettingsPresentor.swift in Sources */,
 				D57A89F524094D0F00A947EC /* VKDelegate.swift in Sources */,
 				D54637AC241E6A7600AE5DCE /* LoginPresenter.swift in Sources */,
 				D57A89FF2409A20100A947EC /* SettingsViewController.swift in Sources */,
